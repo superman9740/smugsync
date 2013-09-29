@@ -68,9 +68,6 @@
         <customObject id="420" customClass="NSFontManager"/>
         <menu id="580" userLabel="StatusMenu">
             <items>
-                <menuItem title="About" id="581">
-                    <modifierMask key="keyEquivalentModifierMask"/>
-                </menuItem>
                 <menuItem title="Preferences" id="583">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>

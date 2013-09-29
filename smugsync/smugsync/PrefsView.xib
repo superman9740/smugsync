@@ -10,7 +10,7 @@
                 <outlet property="apiKey" destination="109" id="118"/>
                 <outlet property="email" destination="87" id="R9O-QJ-F9N"/>
                 <outlet property="iPhotoLibrary" destination="fuJ-Pz-0Xg" id="tBh-ur-k3H"/>
-                <outlet property="openAtLogin" destination="49" id="7Xj-6x-0BQ"/>
+                <outlet property="openAtLogin" destination="49" id="xz1-eB-fiF"/>
                 <outlet property="password" destination="ezg-CJ-hc8" id="ehy-qW-ct3"/>
                 <outlet property="showNotifications" destination="44" id="fXR-fe-lP6"/>
                 <outlet property="view" destination="1" id="2"/>
@@ -47,6 +47,9 @@
                                             <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                             <font key="font" metaFont="system"/>
                                         </buttonCell>
+                                        <connections>
+                                            <action selector="changeOpenAtLogin:" target="-2" id="3kL-Gr-UbI"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>

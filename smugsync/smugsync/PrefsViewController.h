@@ -33,4 +33,8 @@
 
 
 -(IBAction)savePreferences:(id)sender;
+-(void) addAppAsLoginItem;
+-(IBAction)changeOpenAtLogin:(id)sender;
+
+
 @end
