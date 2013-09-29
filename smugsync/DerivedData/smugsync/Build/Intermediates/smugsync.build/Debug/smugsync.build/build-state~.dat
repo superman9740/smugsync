@@ -1,0 +1,241 @@
+Tsmugsync
+v5
+r1
+cCheck dependencies
+cProcessInfoPlistFile /Users/sdickson/Documents/oDesk/SmugSync/smugsync/DerivedData/smugsync/Build/Products/Debug/smugsync.app/Contents/Info.plist smugsync/smugsync-Info.plist
+cDataModelVersionCompile /Users/sdickson/Documents/oDesk/SmugSync/smugsync/DerivedData/smugsync/Build/Products/Debug/smugsync.app/Contents/Resources/smugsync.momd /Users/sdickson/Documents/oDesk/SmugSync/smugsync/smugsync/smugsync.xcdatamodeld
+cProcessPCH /Users/sdickson/Documents/oDesk/SmugSync/smugsync/DerivedData/smugsync/Build/Intermediates/PrecompiledHeaders/smugsync-Prefix-clnekefurjnyordfgfcgbymyytly/smugsync-Prefix.pch.pth smugsync/smugsync-Prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC DerivedData/smugsync/Build/Intermediates/smugsync.build/Debug/smugsync.build/Objects-normal/x86_64/AppDelegate.o /Users/sdickson/Documents/oDesk/SmugSync/smugsync/smugsync/AppDelegate.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC DerivedData/smugsync/Build/Intermediates/smugsync.build/Debug/smugsync.build/Objects-normal/x86_64/main.o /Users/sdickson/Documents/oDesk/SmugSync/smugsync/smugsync/main.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cLd /Users/sdickson/Documents/oDesk/SmugSync/smugsync/DerivedData/smugsync/Build/Products/Debug/smugsync.app/Contents/MacOS/smugsync normal x86_64
+cCopyStringsFile /Users/sdickson/Documents/oDesk/SmugSync/smugsync/DerivedData/smugsync/Build/Products/Debug/smugsync.app/Contents/Resources/en.lproj/InfoPlist.strings smugsync/en.lproj/InfoPlist.strings
+cCompileXIB /Users/sdickson/Documents/oDesk/SmugSync/smugsync/smugsync/en.lproj/MainMenu.xib
+cCpResource smugsync/en.lproj/Credits.rtf DerivedData/smugsync/Build/Products/Debug/smugsync.app/Contents/Resources/en.lproj/Credits.rtf
+cTouch /Users/sdickson/Documents/oDesk/SmugSync/smugsync/DerivedData/smugsync/Build/Products/Debug/smugsync.app
+
+N/Users/sdickson/Documents/oDesk/SmugSync/smugsync/DerivedData/smugsync/Build/Intermediates/PrecompiledHeaders/smugsync-Prefix-clnekefurjnyordfgfcgbymyytly/smugsync-Prefix.pch.pth
+t2
+s0
+
+N/Users/sdickson/Documents/oDesk/SmugSync/smugsync/DerivedData/smugsync/Build/Intermediates/smugsync.build/Debug/smugsync.build/Objects-normal/x86_64/AppDelegate.o
+t2
+s0
+
+N/Users/sdickson/Documents/oDesk/SmugSync/smugsync/DerivedData/smugsync/Build/Intermediates/smugsync.build/Debug/smugsync.build/Objects-normal/x86_64/main.o
+t2
+s0
+
+N/Users/sdickson/Documents/oDesk/SmugSync/smugsync/DerivedData/smugsync/Build/Intermediates/smugsync.build/Debug/smugsync.build/Objects-normal/x86_64/smugsync.LinkFileList
+c0000000052423491000000000000013F
+t1380070545
+s319
+
+N/Users/sdickson/Documents/oDesk/SmugSync/smugsync/DerivedData/smugsync/Build/Products/Debug/smugsync.app
+t2
+s0
+
+N/Users/sdickson/Documents/oDesk/SmugSync/smugsync/DerivedData/smugsync/Build/Products/Debug/smugsync.app/Contents/Info.plist
+t2
+s0
+
+N/Users/sdickson/Documents/oDesk/SmugSync/smugsync/DerivedData/smugsync/Build/Products/Debug/smugsync.app/Contents/MacOS/smugsync
+t2
+s0
+
+N/Users/sdickson/Documents/oDesk/SmugSync/smugsync/DerivedData/smugsync/Build/Products/Debug/smugsync.app/Contents/PkgInfo
+t2
+s0
+
+N/Users/sdickson/Documents/oDesk/SmugSync/smugsync/DerivedData/smugsync/Build/Products/Debug/smugsync.app/Contents/Resources/en.lproj/Credits.rtf
+t2
+s0
+
+N/Users/sdickson/Documents/oDesk/SmugSync/smugsync/DerivedData/smugsync/Build/Products/Debug/smugsync.app/Contents/Resources/en.lproj/InfoPlist.strings
+t2
+s0
+
+N/Users/sdickson/Documents/oDesk/SmugSync/smugsync/DerivedData/smugsync/Build/Products/Debug/smugsync.app/Contents/Resources/en.lproj/MainMenu.nib
+t2
+s0
+
+N/Users/sdickson/Documents/oDesk/SmugSync/smugsync/DerivedData/smugsync/Build/Products/Debug/smugsync.app/Contents/Resources/smugsync.momd
+t2
+s0
+
+N/Users/sdickson/Documents/oDesk/SmugSync/smugsync/smugsync/AppDelegate.m
+c00000000524234910000000000001DAF
+t1380070545
+s7599
+
+N/Users/sdickson/Documents/oDesk/SmugSync/smugsync/smugsync/en.lproj/Credits.rtf
+c000000005242314800000000000001B4
+t1380069704
+s436
+
+N/Users/sdickson/Documents/oDesk/SmugSync/smugsync/smugsync/en.lproj/InfoPlist.strings
+c0000000052423148000000000000002D
+t1380069704
+s45
+
+N/Users/sdickson/Documents/oDesk/SmugSync/smugsync/smugsync/en.lproj/MainMenu.xib
+c00000000524231480000000000033DF8
+t1380069704
+s212472
+
+N/Users/sdickson/Documents/oDesk/SmugSync/smugsync/smugsync/main.m
+c000000005242314800000000000000FD
+t1380069704
+s253
+
+N/Users/sdickson/Documents/oDesk/SmugSync/smugsync/smugsync/smugsync-Prefix.pch
+c00000000524231480000000000000093
+t1380069704
+s147
+i<Cocoa/Cocoa.h>
+
+N/Users/sdickson/Documents/oDesk/SmugSync/smugsync/smugsync/smugsync.xcdatamodeld
+c00000000524231480000000000000088
+t1380069704
+s136
+
+N/Volumes/Firewire/sdickson30_applications/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk
+c0000000051F5C6DC00000000000000AA
+t1375061724
+s170
+
+N/Volumes/Firewire/sdickson30_applications/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/Cocoa.framework/Cocoa
+c0000000050E7C76F00000000000025C8
+t1357367151
+s9672
+
+N/Volumes/Firewire/sdickson30_applications/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/Cocoa.framework/Headers/Cocoa.h
+c0000000050E7C76F00000000000001E5
+t1357367151
+s485
+
+Nsmugsync/smugsync-Info.plist
+c0000000052423148000000000000044E
+t1380069704
+s1102
+
+CBuild AST from /Users/sdickson/Documents/oDesk/SmugSync/smugsync/smugsync/AppDelegate.m
+r0
+
+CBuild AST from /Users/sdickson/Documents/oDesk/SmugSync/smugsync/smugsync/main.m
+r0
+
+CCheck dependencies
+r0
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies3be3cb116cf2b741^d847df116cf2b741^---0#1#0#--18"Check dependencies36"E9CBD7C1-3F48-4B5E-A296-D3C5327AADE5-
+
+CCompileC DerivedData/smugsync/Build/Intermediates/smugsync.build/Debug/smugsync.build/Objects-normal/x86_64/AppDelegate.o /Users/sdickson/Documents/oDesk/SmugSync/smugsync/smugsync/AppDelegate.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s401763347.586133
+e401763347.753097
+r1
+xCompileC
+xDerivedData/smugsync/Build/Intermediates/smugsync.build/Debug/smugsync.build/Objects-normal/x86_64/AppDelegate.o
+x/Users/sdickson/Documents/oDesk/SmugSync/smugsync/smugsync/AppDelegate.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+o/Users/sdickson/Documents/oDesk/SmugSync/smugsync/smugsync/AppDelegate.m:20:19: warning: unused variable 'entitlementDict' [-Wunused-variable]
+o    NSDictionary *entitlementDict = [NSDictionary dictionaryWithContentsOfFile:@"~/Documents/AlbumData.plist"];
+o                  ^
+o/Users/sdickson/Documents/oDesk/SmugSync/smugsync/smugsync/AppDelegate.m:21:9: warning: unused variable 'x' [-Wunused-variable]
+o    int x = 5;
+o        ^
+o2 warnings generated.
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection80"Compile /Users/sdickson/Documents/oDesk/SmugSync/smugsync/smugsync/AppDelegate.m922296136cf2b741^745fc2136cf2b741^-450"/Users/sdickson/Documents/oDesk/SmugSync/smugsync/smugsync/AppDelegate.m:20:19: warning: unused variable 'entitlementDict' [-Wunused-variable]    NSDictionary *entitlementDict = [NSDictionary dictionaryWithContentsOfFile:@"~/Documents/AlbumData.plist"];                  ^/Users/sdickson/Documents/oDesk/SmugSync/smugsync/smugsync/AppDelegate.m:21:9: warning: unused variable 'x' [-Wunused-variable]    int x = 5;        ^2 warnings generated.2(36%IDEClangDiagnosticActivityLogMessage2@33"Unused variable 'entitlementDict'-401763347#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@88"file://localhost/Users/sdickson/Documents/oDesk/SmugSync/smugsync/smugsync/AppDelegate.m0000000000000000^19#18#19#18#472#0#19"Unused Entity Issue--2@19"Unused variable 'x'-401763347#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@88"file://localhost/Users/sdickson/Documents/oDesk/SmugSync/smugsync/smugsync/AppDelegate.m0000000000000000^20#8#20#8#574#0#19"Unused Entity Issue--0#0#0#-19%DVTDocumentLocation4@88"file://localhost/Users/sdickson/Documents/oDesk/SmugSync/smugsync/smugsync/AppDelegate.m0000000000000000^3779"CompileC DerivedData/smugsync/Build/Intermediates/smugsync.build/Debug/smugsync.build/Objects-normal/x86_64/AppDelegate.o smugsync/AppDelegate.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/sdickson/Documents/oDesk/SmugSync/smugsync    setenv LANG en_US.US-ASCII    /Volumes/Firewire/sdickson30_applications/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Volumes/Firewire/sdickson30_applications/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.8 -g -Wno-sign-conversion -iquote /Users/sdickson/Documents/oDesk/SmugSync/smugsync/DerivedData/smugsync/Build/Intermediates/smugsync.build/Debug/smugsync.build/smugsync-generated-files.hmap -I/Users/sdickson/Documents/oDesk/SmugSync/smugsync/DerivedData/smugsync/Build/Intermediates/smugsync.build/Debug/smugsync.build/smugsync-own-target-headers.hmap -I/Users/sdickson/Documents/oDesk/SmugSync/smugsync/DerivedData/smugsync/Build/Intermediates/smugsync.build/Debug/smugsync.build/smugsync-all-target-headers.hmap -iquote /Users/sdickson/Documents/oDesk/SmugSync/smugsync/DerivedData/smugsync/Build/Intermediates/smugsync.build/Debug/smugsync.build/smugsync-project-headers.hmap -I/Users/sdickson/Documents/oDesk/SmugSync/smugsync/DerivedData/smugsync/Build/Products/Debug/include -I/Volumes/Firewire/sdickson30_applications/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Volumes/Firewire/sdickson30_applications/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Volumes/Firewire/sdickson30_applications/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/sdickson/Documents/oDesk/SmugSync/smugsync/DerivedData/smugsync/Build/Intermediates/smugsync.build/Debug/smugsync.build/DerivedSources/x86_64 -I/Users/sdickson/Documents/oDesk/SmugSync/smugsync/DerivedData/smugsync/Build/Intermediates/smugsync.build/Debug/smugsync.build/DerivedSources -F/Users/sdickson/Documents/oDesk/SmugSync/smugsync/DerivedData/smugsync/Build/Products/Debug -include /Users/sdickson/Documents/oDesk/SmugSync/smugsync/DerivedData/smugsync/Build/Intermediates/PrecompiledHeaders/smugsync-Prefix-clnekefurjnyordfgfcgbymyytly/smugsync-Prefix.pch -MMD -MT dependencies -MF /Users/sdickson/Documents/oDesk/SmugSync/smugsync/DerivedData/smugsync/Build/Intermediates/smugsync.build/Debug/smugsync.build/Objects-normal/x86_64/AppDelegate.d --serialize-diagnostics /Users/sdickson/Documents/oDesk/SmugSync/smugsync/DerivedData/smugsync/Build/Intermediates/smugsync.build/Debug/smugsync.build/Objects-normal/x86_64/AppDelegate.dia -c /Users/sdickson/Documents/oDesk/SmugSync/smugsync/smugsync/AppDelegate.m -o /Users/sdickson/Documents/oDesk/SmugSync/smugsync/DerivedData/smugsync/Build/Intermediates/smugsync.build/Debug/smugsync.build/Objects-normal/x86_64/AppDelegate.o36"9B8ADC67-C294-4023-92F7-CE4BABB8D48B-
+
+CCompileC DerivedData/smugsync/Build/Intermediates/smugsync.build/Debug/smugsync.build/Objects-normal/x86_64/main.o /Users/sdickson/Documents/oDesk/SmugSync/smugsync/smugsync/main.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s401763347.586139
+e401763347.698512
+r1
+xCompileC
+xDerivedData/smugsync/Build/Intermediates/smugsync.build/Debug/smugsync.build/Objects-normal/x86_64/main.o
+x/Users/sdickson/Documents/oDesk/SmugSync/smugsync/smugsync/main.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection73"Compile /Users/sdickson/Documents/oDesk/SmugSync/smugsync/smugsync/main.m812296136cf2b741^56d2b2136cf2b741^---0#0#0#-19%DVTDocumentLocation2@81"file://localhost/Users/sdickson/Documents/oDesk/SmugSync/smugsync/smugsync/main.m0000000000000000^3737"CompileC DerivedData/smugsync/Build/Intermediates/smugsync.build/Debug/smugsync.build/Objects-normal/x86_64/main.o smugsync/main.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/sdickson/Documents/oDesk/SmugSync/smugsync    setenv LANG en_US.US-ASCII    /Volumes/Firewire/sdickson30_applications/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Volumes/Firewire/sdickson30_applications/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.8 -g -Wno-sign-conversion -iquote /Users/sdickson/Documents/oDesk/SmugSync/smugsync/DerivedData/smugsync/Build/Intermediates/smugsync.build/Debug/smugsync.build/smugsync-generated-files.hmap -I/Users/sdickson/Documents/oDesk/SmugSync/smugsync/DerivedData/smugsync/Build/Intermediates/smugsync.build/Debug/smugsync.build/smugsync-own-target-headers.hmap -I/Users/sdickson/Documents/oDesk/SmugSync/smugsync/DerivedData/smugsync/Build/Intermediates/smugsync.build/Debug/smugsync.build/smugsync-all-target-headers.hmap -iquote /Users/sdickson/Documents/oDesk/SmugSync/smugsync/DerivedData/smugsync/Build/Intermediates/smugsync.build/Debug/smugsync.build/smugsync-project-headers.hmap -I/Users/sdickson/Documents/oDesk/SmugSync/smugsync/DerivedData/smugsync/Build/Products/Debug/include -I/Volumes/Firewire/sdickson30_applications/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Volumes/Firewire/sdickson30_applications/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Volumes/Firewire/sdickson30_applications/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/sdickson/Documents/oDesk/SmugSync/smugsync/DerivedData/smugsync/Build/Intermediates/smugsync.build/Debug/smugsync.build/DerivedSources/x86_64 -I/Users/sdickson/Documents/oDesk/SmugSync/smugsync/DerivedData/smugsync/Build/Intermediates/smugsync.build/Debug/smugsync.build/DerivedSources -F/Users/sdickson/Documents/oDesk/SmugSync/smugsync/DerivedData/smugsync/Build/Products/Debug -include /Users/sdickson/Documents/oDesk/SmugSync/smugsync/DerivedData/smugsync/Build/Intermediates/PrecompiledHeaders/smugsync-Prefix-clnekefurjnyordfgfcgbymyytly/smugsync-Prefix.pch -MMD -MT dependencies -MF /Users/sdickson/Documents/oDesk/SmugSync/smugsync/DerivedData/smugsync/Build/Intermediates/smugsync.build/Debug/smugsync.build/Objects-normal/x86_64/main.d --serialize-diagnostics /Users/sdickson/Documents/oDesk/SmugSync/smugsync/DerivedData/smugsync/Build/Intermediates/smugsync.build/Debug/smugsync.build/Objects-normal/x86_64/main.dia -c /Users/sdickson/Documents/oDesk/SmugSync/smugsync/smugsync/main.m -o /Users/sdickson/Documents/oDesk/SmugSync/smugsync/DerivedData/smugsync/Build/Intermediates/smugsync.build/Debug/smugsync.build/Objects-normal/x86_64/main.o36"63B613D3-D633-4586-B96E-3B25FEE99734-
+
+CCompileXIB /Users/sdickson/Documents/oDesk/SmugSync/smugsync/smugsync/en.lproj/MainMenu.xib
+s401763348.852555
+e401763349.284072
+r1
+xCompileXIB
+x/Users/sdickson/Documents/oDesk/SmugSync/smugsync/smugsync/en.lproj/MainMenu.xib
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection90"Compiling /Users/sdickson/Documents/oDesk/SmugSync/smugsync/smugsync/en.lproj/MainMenu.xib4050da146cf2b741^e1b848156cf2b741^---0#0#0#-19%DVTDocumentLocation2@96"file://localhost/Users/sdickson/Documents/oDesk/SmugSync/smugsync/smugsync/en.lproj/MainMenu.xib0000000000000000^782"CompileXIB smugsync/en.lproj/MainMenu.xib    cd /Users/sdickson/Documents/oDesk/SmugSync/smugsync    setenv XCODE_DEVELOPER_USR_PATH /Volumes/Firewire/sdickson30_applications/Applications/Xcode.app/Contents/Developer/usr/bin/..    /Volumes/Firewire/sdickson30_applications/Applications/Xcode.app/Contents/Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/sdickson/Documents/oDesk/SmugSync/smugsync/DerivedData/smugsync/Build/Products/Debug/smugsync.app/Contents/Resources/en.lproj/MainMenu.nib /Users/sdickson/Documents/oDesk/SmugSync/smugsync/smugsync/en.lproj/MainMenu.xib --sdk /Volumes/Firewire/sdickson30_applications/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk36"EBD1C098-D8D1-4E0C-A268-34C16958D906-
+
+CCopyStringsFile /Users/sdickson/Documents/oDesk/SmugSync/smugsync/DerivedData/smugsync/Build/Products/Debug/smugsync.app/Contents/Resources/en.lproj/InfoPlist.strings smugsync/en.lproj/InfoPlist.strings
+s401763348.852544
+e401763348.878584
+r1
+xCopyStringsFile
+x/Users/sdickson/Documents/oDesk/SmugSync/smugsync/DerivedData/smugsync/Build/Products/Debug/smugsync.app/Contents/Resources/en.lproj/InfoPlist.strings
+xsmugsync/en.lproj/InfoPlist.strings
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection40"Copy smugsync/en.lproj/InfoPlist.strings0951da146cf2b741^f2eae0146cf2b741^---0#0#0#-19%DVTDocumentLocation2@101"file://localhost/Users/sdickson/Documents/oDesk/SmugSync/smugsync/smugsync/en.lproj/InfoPlist.strings0000000000000000^472"CopyStringsFile DerivedData/smugsync/Build/Products/Debug/smugsync.app/Contents/Resources/en.lproj/InfoPlist.strings smugsync/en.lproj/InfoPlist.strings    cd /Users/sdickson/Documents/oDesk/SmugSync/smugsync    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding UTF-16 --outdir /Users/sdickson/Documents/oDesk/SmugSync/smugsync/DerivedData/smugsync/Build/Products/Debug/smugsync.app/Contents/Resources/en.lproj -- smugsync/en.lproj/InfoPlist.strings36"E91D5747-1FEC-4360-B940-EF6461305C7D-
+
+CCpResource smugsync/en.lproj/Credits.rtf DerivedData/smugsync/Build/Products/Debug/smugsync.app/Contents/Resources/en.lproj/Credits.rtf
+s401763348.852559
+e401763348.878024
+r1
+xCpResource
+xsmugsync/en.lproj/Credits.rtf
+xDerivedData/smugsync/Build/Products/Debug/smugsync.app/Contents/Resources/en.lproj/Credits.rtf
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection99"Copy DerivedData/smugsync/Build/Products/Debug/smugsync.app/Contents/Resources/en.lproj/Credits.rtf8b52da146cf2b741^c8cde0146cf2b741^---0#0#0#-19%DVTDocumentLocation2@160"file://localhost/Users/sdickson/Documents/oDesk/SmugSync/smugsync/DerivedData/smugsync/Build/Products/Debug/smugsync.app/Contents/Resources/en.lproj/Credits.rtf000000000080d041^518"CpResource smugsync/en.lproj/Credits.rtf DerivedData/smugsync/Build/Products/Debug/smugsync.app/Contents/Resources/en.lproj/Credits.rtf    cd /Users/sdickson/Documents/oDesk/SmugSync/smugsync    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/sdickson/Documents/oDesk/SmugSync/smugsync/smugsync/en.lproj/Credits.rtf /Users/sdickson/Documents/oDesk/SmugSync/smugsync/DerivedData/smugsync/Build/Products/Debug/smugsync.app/Contents/Resources/en.lproj36"B07E2353-B989-46AF-B34D-8E45902E464B-
+
+CDataModelVersionCompile /Users/sdickson/Documents/oDesk/SmugSync/smugsync/DerivedData/smugsync/Build/Products/Debug/smugsync.app/Contents/Resources/smugsync.momd /Users/sdickson/Documents/oDesk/SmugSync/smugsync/smugsync/smugsync.xcdatamodeld
+s401763345.909001
+e401763346.235253
+r1
+xDataModelVersionCompile
+x/Users/sdickson/Documents/oDesk/SmugSync/smugsync/DerivedData/smugsync/Build/Products/Debug/smugsync.app/Contents/Resources/smugsync.momd
+x/Users/sdickson/Documents/oDesk/SmugSync/smugsync/smugsync/smugsync.xcdatamodeld
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection142"DataModelVersionCompile DerivedData/smugsync/Build/Products/Debug/smugsync.app/Contents/Resources/smugsync.momd smugsync/smugsync.xcdatamodeldd523e9116cf2b741^b6d83d126cf2b741^---0#0#0#-19%DVTDocumentLocation2@97"file://localhost/Users/sdickson/Documents/oDesk/SmugSync/smugsync/smugsync/smugsync.xcdatamodeld/0000000000000000^729"DataModelVersionCompile DerivedData/smugsync/Build/Products/Debug/smugsync.app/Contents/Resources/smugsync.momd smugsync/smugsync.xcdatamodeld    cd /Users/sdickson/Documents/oDesk/SmugSync/smugsync    /Volumes/Firewire/sdickson30_applications/Applications/Xcode.app/Contents/Developer/usr/bin/momc -XD_MOMC_SDKROOT=/Volumes/Firewire/sdickson30_applications/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -MOMC_PLATFORMS macosx -XD_MOMC_TARGET_VERSION=10.8 /Users/sdickson/Documents/oDesk/SmugSync/smugsync/smugsync/smugsync.xcdatamodeld /Users/sdickson/Documents/oDesk/SmugSync/smugsync/DerivedData/smugsync/Build/Products/Debug/smugsync.app/Contents/Resources/smugsync.momd36"D3F995F3-29F7-4598-8F28-F5F1A503EFF7-
+
+CLd /Users/sdickson/Documents/oDesk/SmugSync/smugsync/DerivedData/smugsync/Build/Products/Debug/smugsync.app/Contents/MacOS/smugsync normal x86_64
+s401763347.759345
+e401763348.844168
+r1
+xLd
+x/Users/sdickson/Documents/oDesk/SmugSync/smugsync/DerivedData/smugsync/Build/Products/Debug/smugsync.app/Contents/MacOS/smugsync
+xnormal
+xx86_64
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection133"Link /Users/sdickson/Documents/oDesk/SmugSync/smugsync/DerivedData/smugsync/Build/Products/Debug/smugsync.app/Contents/MacOS/smugsyncf374c2136cf2b741^761bd8146cf2b741^---0#0#0#--1070"Ld DerivedData/smugsync/Build/Products/Debug/smugsync.app/Contents/MacOS/smugsync normal x86_64    cd /Users/sdickson/Documents/oDesk/SmugSync/smugsync    setenv MACOSX_DEPLOYMENT_TARGET 10.8    /Volumes/Firewire/sdickson30_applications/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch x86_64 -isysroot /Volumes/Firewire/sdickson30_applications/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -L/Users/sdickson/Documents/oDesk/SmugSync/smugsync/DerivedData/smugsync/Build/Products/Debug -F/Users/sdickson/Documents/oDesk/SmugSync/smugsync/DerivedData/smugsync/Build/Products/Debug -filelist /Users/sdickson/Documents/oDesk/SmugSync/smugsync/DerivedData/smugsync/Build/Intermediates/smugsync.build/Debug/smugsync.build/Objects-normal/x86_64/smugsync.LinkFileList -mmacosx-version-min=10.8 -fobjc-arc -fobjc-link-runtime -framework Cocoa -o /Users/sdickson/Documents/oDesk/SmugSync/smugsync/DerivedData/smugsync/Build/Products/Debug/smugsync.app/Contents/MacOS/smugsync36"16D380D4-1664-42AB-97F1-071C991B7021-
+
+CProcessInfoPlistFile /Users/sdickson/Documents/oDesk/SmugSync/smugsync/DerivedData/smugsync/Build/Products/Debug/smugsync.app/Contents/Info.plist smugsync/smugsync-Info.plist
+s401763345.894105
+e401763345.900981
+r1
+xProcessInfoPlistFile
+x/Users/sdickson/Documents/oDesk/SmugSync/smugsync/DerivedData/smugsync/Build/Products/Debug/smugsync.app/Contents/Info.plist
+xsmugsync/smugsync-Info.plist
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection36"Process smugsync/smugsync-Info.plist3dbae5116cf2b741^d2a6e6116cf2b741^---0#0#0#-19%DVTDocumentLocation2@94"file://localhost/Users/sdickson/Documents/oDesk/SmugSync/smugsync/smugsync/smugsync-Info.plist0000000000000000^540"ProcessInfoPlistFile DerivedData/smugsync/Build/Products/Debug/smugsync.app/Contents/Info.plist smugsync/smugsync-Info.plist    cd /Users/sdickson/Documents/oDesk/SmugSync/smugsync    builtin-infoPlistUtility smugsync/smugsync-Info.plist -genpkginfo /Users/sdickson/Documents/oDesk/SmugSync/smugsync/DerivedData/smugsync/Build/Products/Debug/smugsync.app/Contents/PkgInfo -expandbuildsettings -platform macosx -o /Users/sdickson/Documents/oDesk/SmugSync/smugsync/DerivedData/smugsync/Build/Products/Debug/smugsync.app/Contents/Info.plist36"0D30572F-7591-4A6B-88A1-2D1DA4301E46-
+
+CProcessPCH /Users/sdickson/Documents/oDesk/SmugSync/smugsync/DerivedData/smugsync/Build/Intermediates/PrecompiledHeaders/smugsync-Prefix-clnekefurjnyordfgfcgbymyytly/smugsync-Prefix.pch.pth smugsync/smugsync-Prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s401763345.909011
+e401763347.579688
+r1
+xProcessPCH
+x/Users/sdickson/Documents/oDesk/SmugSync/smugsync/DerivedData/smugsync/Build/Intermediates/PrecompiledHeaders/smugsync-Prefix-clnekefurjnyordfgfcgbymyytly/smugsync-Prefix.pch.pth
+xsmugsync/smugsync-Prefix.pch
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection39"Precompile smugsync/smugsync-Prefix.pch4a28e9116cf2b741^1b6694136cf2b741^---0#0#0#-19%DVTDocumentLocation2@94"file://localhost/Users/sdickson/Documents/oDesk/SmugSync/smugsync/smugsync/smugsync-Prefix.pch0000000000000000^3676"ProcessPCH DerivedData/smugsync/Build/Intermediates/PrecompiledHeaders/smugsync-Prefix-clnekefurjnyordfgfcgbymyytly/smugsync-Prefix.pch.pth smugsync/smugsync-Prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/sdickson/Documents/oDesk/SmugSync/smugsync    setenv LANG en_US.US-ASCII    /Volumes/Firewire/sdickson30_applications/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch x86_64 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Volumes/Firewire/sdickson30_applications/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.8 -g -Wno-sign-conversion -iquote /Users/sdickson/Documents/oDesk/SmugSync/smugsync/DerivedData/smugsync/Build/Intermediates/smugsync.build/Debug/smugsync.build/smugsync-generated-files.hmap -I/Users/sdickson/Documents/oDesk/SmugSync/smugsync/DerivedData/smugsync/Build/Intermediates/smugsync.build/Debug/smugsync.build/smugsync-own-target-headers.hmap -I/Users/sdickson/Documents/oDesk/SmugSync/smugsync/DerivedData/smugsync/Build/Intermediates/smugsync.build/Debug/smugsync.build/smugsync-all-target-headers.hmap -iquote /Users/sdickson/Documents/oDesk/SmugSync/smugsync/DerivedData/smugsync/Build/Intermediates/smugsync.build/Debug/smugsync.build/smugsync-project-headers.hmap -I/Users/sdickson/Documents/oDesk/SmugSync/smugsync/DerivedData/smugsync/Build/Products/Debug/include -I/Volumes/Firewire/sdickson30_applications/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Volumes/Firewire/sdickson30_applications/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Volumes/Firewire/sdickson30_applications/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/sdickson/Documents/oDesk/SmugSync/smugsync/DerivedData/smugsync/Build/Intermediates/smugsync.build/Debug/smugsync.build/DerivedSources/x86_64 -I/Users/sdickson/Documents/oDesk/SmugSync/smugsync/DerivedData/smugsync/Build/Intermediates/smugsync.build/Debug/smugsync.build/DerivedSources -F/Users/sdickson/Documents/oDesk/SmugSync/smugsync/DerivedData/smugsync/Build/Products/Debug --serialize-diagnostics /Users/sdickson/Documents/oDesk/SmugSync/smugsync/DerivedData/smugsync/Build/Intermediates/PrecompiledHeaders/smugsync-Prefix-clnekefurjnyordfgfcgbymyytly/smugsync-Prefix.pch.dia -c /Users/sdickson/Documents/oDesk/SmugSync/smugsync/smugsync/smugsync-Prefix.pch -o /Users/sdickson/Documents/oDesk/SmugSync/smugsync/DerivedData/smugsync/Build/Intermediates/PrecompiledHeaders/smugsync-Prefix-clnekefurjnyordfgfcgbymyytly/smugsync-Prefix.pch.pth -MMD -MT dependencies -MF /Users/sdickson/Documents/oDesk/SmugSync/smugsync/DerivedData/smugsync/Build/Intermediates/PrecompiledHeaders/smugsync-Prefix-clnekefurjnyordfgfcgbymyytly/smugsync-Prefix.pch.d36"7FD7B154-2BD2-4464-BD59-39355FBC79FD-
+
+CProcessPCH /Users/sdickson/Documents/oDesk/SmugSync/smugsync/DerivedData/smugsync/Index/PrecompiledHeaders/smugsync-Prefix-drvtgyoxsnsreiariggrumuwiprx_ast/smugsync-Prefix.pch.pth smugsync/smugsync-Prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
+CTouch /Users/sdickson/Documents/oDesk/SmugSync/smugsync/DerivedData/smugsync/Build/Products/Debug/smugsync.app
+s401763349.292048
+e401763349.354141
+r1
+xTouch
+x/Users/sdickson/Documents/oDesk/SmugSync/smugsync/DerivedData/smugsync/Build/Products/Debug/smugsync.app
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection110"Touch /Users/sdickson/Documents/oDesk/SmugSync/smugsync/DerivedData/smugsync/Build/Products/Debug/smugsync.app0bd04a156cf2b741^daa85a156cf2b741^---0#0#0#--245"Touch DerivedData/smugsync/Build/Products/Debug/smugsync.app    cd /Users/sdickson/Documents/oDesk/SmugSync/smugsync    /usr/bin/touch -c /Users/sdickson/Documents/oDesk/SmugSync/smugsync/DerivedData/smugsync/Build/Products/Debug/smugsync.app36"19102BAE-DAEF-4AC1-8534-0B270CFD80A1-
+

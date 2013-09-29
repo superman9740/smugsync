@@ -1,0 +1,552 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3C62E2C717F73C7800022F50 /* Album.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C62E2C617F73C7800022F50 /* Album.m */; };
+		3C62E2CA17F73CA500022F50 /* Photo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C62E2C917F73CA500022F50 /* Photo.m */; };
+		3C62E2CD17F7545F00022F50 /* NSTextFieldCopyPast.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C62E2CC17F7545F00022F50 /* NSTextFieldCopyPast.m */; };
+		3C62E2F017F7756A00022F50 /* CDEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C62E2EC17F7756A00022F50 /* CDEvent.m */; };
+		3C62E2F117F7756A00022F50 /* CDEvents.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C62E2EE17F7756A00022F50 /* CDEvents.m */; };
+		3CCACCDD17F268C800586616 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CCACCDC17F268C800586616 /* Cocoa.framework */; };
+		3CCACCE717F268C800586616 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3CCACCE517F268C800586616 /* InfoPlist.strings */; };
+		3CCACCE917F268C800586616 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CCACCE817F268C800586616 /* main.m */; };
+		3CCACCED17F268C800586616 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 3CCACCEB17F268C800586616 /* Credits.rtf */; };
+		3CCACCF017F268C800586616 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CCACCEF17F268C800586616 /* AppDelegate.m */; };
+		3CCACCF317F268C800586616 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CCACCF117F268C800586616 /* MainMenu.xib */; };
+		3CCACCF617F268C800586616 /* smugsync.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3CCACCF417F268C800586616 /* smugsync.xcdatamodeld */; };
+		3CCACCFE17F268C800586616 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CCACCFD17F268C800586616 /* SenTestingKit.framework */; };
+		3CCACCFF17F268C800586616 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CCACCDC17F268C800586616 /* Cocoa.framework */; };
+		3CCACD0717F268C800586616 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3CCACD0517F268C800586616 /* InfoPlist.strings */; };
+		3CCACD0A17F268C800586616 /* smugsyncTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CCACD0917F268C800586616 /* smugsyncTests.m */; };
+		3CCACD1717F6672200586616 /* PrefsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CCACD1517F6672200586616 /* PrefsViewController.m */; };
+		3CCACD1817F6672200586616 /* PrefsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CCACD1617F6672200586616 /* PrefsView.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3CCACD0017F268C800586616 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3CCACCD117F268C800586616 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3CCACCD817F268C800586616;
+			remoteInfo = smugsync;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3C62E2C517F73C7800022F50 /* Album.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Album.h; sourceTree = "<group>"; };
+		3C62E2C617F73C7800022F50 /* Album.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Album.m; sourceTree = "<group>"; };
+		3C62E2C817F73CA500022F50 /* Photo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Photo.h; sourceTree = "<group>"; };
+		3C62E2C917F73CA500022F50 /* Photo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Photo.m; sourceTree = "<group>"; };
+		3C62E2CB17F7545F00022F50 /* NSTextFieldCopyPast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSTextFieldCopyPast.h; sourceTree = "<group>"; };
+		3C62E2CC17F7545F00022F50 /* NSTextFieldCopyPast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSTextFieldCopyPast.m; sourceTree = "<group>"; };
+		3C62E2EB17F7756A00022F50 /* CDEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDEvent.h; sourceTree = "<group>"; };
+		3C62E2EC17F7756A00022F50 /* CDEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDEvent.m; sourceTree = "<group>"; };
+		3C62E2ED17F7756A00022F50 /* CDEvents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDEvents.h; sourceTree = "<group>"; };
+		3C62E2EE17F7756A00022F50 /* CDEvents.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDEvents.m; sourceTree = "<group>"; };
+		3C62E2EF17F7756A00022F50 /* CDEventsDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDEventsDelegate.h; sourceTree = "<group>"; };
+		3C62E2F217F775AF00022F50 /* compat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = compat.h; sourceTree = "<group>"; };
+		3CCACCD917F268C800586616 /* smugsync.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = smugsync.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CCACCDC17F268C800586616 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		3CCACCDF17F268C800586616 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		3CCACCE017F268C800586616 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		3CCACCE117F268C800586616 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3CCACCE417F268C800586616 /* smugsync-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "smugsync-Info.plist"; sourceTree = "<group>"; };
+		3CCACCE617F268C800586616 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3CCACCE817F268C800586616 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3CCACCEA17F268C800586616 /* smugsync-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "smugsync-Prefix.pch"; sourceTree = "<group>"; };
+		3CCACCEC17F268C800586616 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		3CCACCEE17F268C800586616 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3CCACCEF17F268C800586616 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3CCACCF217F268C800586616 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		3CCACCF517F268C800586616 /* smugsync.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = smugsync.xcdatamodel; sourceTree = "<group>"; };
+		3CCACCFC17F268C800586616 /* smugsyncTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = smugsyncTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CCACCFD17F268C800586616 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		3CCACD0417F268C800586616 /* smugsyncTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "smugsyncTests-Info.plist"; sourceTree = "<group>"; };
+		3CCACD0617F268C800586616 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3CCACD0817F268C800586616 /* smugsyncTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = smugsyncTests.h; sourceTree = "<group>"; };
+		3CCACD0917F268C800586616 /* smugsyncTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = smugsyncTests.m; sourceTree = "<group>"; };
+		3CCACD1417F6672200586616 /* PrefsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefsViewController.h; sourceTree = "<group>"; };
+		3CCACD1517F6672200586616 /* PrefsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrefsViewController.m; sourceTree = "<group>"; };
+		3CCACD1617F6672200586616 /* PrefsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PrefsView.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3CCACCD617F268C800586616 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CCACCDD17F268C800586616 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CCACCF817F268C800586616 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CCACCFE17F268C800586616 /* SenTestingKit.framework in Frameworks */,
+				3CCACCFF17F268C800586616 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3C62E2C417F73C6500022F50 /* CustomObjects */ = {
+			isa = PBXGroup;
+			children = (
+				3C62E2F217F775AF00022F50 /* compat.h */,
+				3C62E2EB17F7756A00022F50 /* CDEvent.h */,
+				3C62E2EC17F7756A00022F50 /* CDEvent.m */,
+				3C62E2ED17F7756A00022F50 /* CDEvents.h */,
+				3C62E2EE17F7756A00022F50 /* CDEvents.m */,
+				3C62E2EF17F7756A00022F50 /* CDEventsDelegate.h */,
+				3C62E2C517F73C7800022F50 /* Album.h */,
+				3C62E2C617F73C7800022F50 /* Album.m */,
+				3C62E2C817F73CA500022F50 /* Photo.h */,
+				3C62E2C917F73CA500022F50 /* Photo.m */,
+				3C62E2CB17F7545F00022F50 /* NSTextFieldCopyPast.h */,
+				3C62E2CC17F7545F00022F50 /* NSTextFieldCopyPast.m */,
+			);
+			name = CustomObjects;
+			sourceTree = "<group>";
+		};
+		3CCACCD017F268C800586616 = {
+			isa = PBXGroup;
+			children = (
+				3CCACCE217F268C800586616 /* smugsync */,
+				3CCACD0217F268C800586616 /* smugsyncTests */,
+				3CCACCDB17F268C800586616 /* Frameworks */,
+				3CCACCDA17F268C800586616 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3CCACCDA17F268C800586616 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3CCACCD917F268C800586616 /* smugsync.app */,
+				3CCACCFC17F268C800586616 /* smugsyncTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3CCACCDB17F268C800586616 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3CCACCDC17F268C800586616 /* Cocoa.framework */,
+				3CCACCFD17F268C800586616 /* SenTestingKit.framework */,
+				3CCACCDE17F268C800586616 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3CCACCDE17F268C800586616 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3CCACCDF17F268C800586616 /* AppKit.framework */,
+				3CCACCE017F268C800586616 /* CoreData.framework */,
+				3CCACCE117F268C800586616 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		3CCACCE217F268C800586616 /* smugsync */ = {
+			isa = PBXGroup;
+			children = (
+				3C62E2C417F73C6500022F50 /* CustomObjects */,
+				3CCACD1317F6604E00586616 /* ViewController */,
+				3CCACCEE17F268C800586616 /* AppDelegate.h */,
+				3CCACCEF17F268C800586616 /* AppDelegate.m */,
+				3CCACCF117F268C800586616 /* MainMenu.xib */,
+				3CCACD1617F6672200586616 /* PrefsView.xib */,
+				3CCACCF417F268C800586616 /* smugsync.xcdatamodeld */,
+				3CCACCE317F268C800586616 /* Supporting Files */,
+			);
+			path = smugsync;
+			sourceTree = "<group>";
+		};
+		3CCACCE317F268C800586616 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3CCACCE417F268C800586616 /* smugsync-Info.plist */,
+				3CCACCE517F268C800586616 /* InfoPlist.strings */,
+				3CCACCE817F268C800586616 /* main.m */,
+				3CCACCEA17F268C800586616 /* smugsync-Prefix.pch */,
+				3CCACCEB17F268C800586616 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3CCACD0217F268C800586616 /* smugsyncTests */ = {
+			isa = PBXGroup;
+			children = (
+				3CCACD0817F268C800586616 /* smugsyncTests.h */,
+				3CCACD0917F268C800586616 /* smugsyncTests.m */,
+				3CCACD0317F268C800586616 /* Supporting Files */,
+			);
+			path = smugsyncTests;
+			sourceTree = "<group>";
+		};
+		3CCACD0317F268C800586616 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3CCACD0417F268C800586616 /* smugsyncTests-Info.plist */,
+				3CCACD0517F268C800586616 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3CCACD1317F6604E00586616 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3CCACD1417F6672200586616 /* PrefsViewController.h */,
+				3CCACD1517F6672200586616 /* PrefsViewController.m */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3CCACCD817F268C800586616 /* smugsync */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3CCACD0D17F268C800586616 /* Build configuration list for PBXNativeTarget "smugsync" */;
+			buildPhases = (
+				3CCACCD517F268C800586616 /* Sources */,
+				3CCACCD617F268C800586616 /* Frameworks */,
+				3CCACCD717F268C800586616 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = smugsync;
+			productName = smugsync;
+			productReference = 3CCACCD917F268C800586616 /* smugsync.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3CCACCFB17F268C800586616 /* smugsyncTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3CCACD1017F268C800586616 /* Build configuration list for PBXNativeTarget "smugsyncTests" */;
+			buildPhases = (
+				3CCACCF717F268C800586616 /* Sources */,
+				3CCACCF817F268C800586616 /* Frameworks */,
+				3CCACCF917F268C800586616 /* Resources */,
+				3CCACCFA17F268C800586616 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3CCACD0117F268C800586616 /* PBXTargetDependency */,
+			);
+			name = smugsyncTests;
+			productName = smugsyncTests;
+			productReference = 3CCACCFC17F268C800586616 /* smugsyncTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3CCACCD117F268C800586616 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Shane Dickson";
+			};
+			buildConfigurationList = 3CCACCD417F268C800586616 /* Build configuration list for PBXProject "smugsync" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3CCACCD017F268C800586616;
+			productRefGroup = 3CCACCDA17F268C800586616 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3CCACCD817F268C800586616 /* smugsync */,
+				3CCACCFB17F268C800586616 /* smugsyncTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3CCACCD717F268C800586616 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CCACCE717F268C800586616 /* InfoPlist.strings in Resources */,
+				3CCACCED17F268C800586616 /* Credits.rtf in Resources */,
+				3CCACCF317F268C800586616 /* MainMenu.xib in Resources */,
+				3CCACD1817F6672200586616 /* PrefsView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CCACCF917F268C800586616 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CCACD0717F268C800586616 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3CCACCFA17F268C800586616 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3CCACCD517F268C800586616 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C62E2CA17F73CA500022F50 /* Photo.m in Sources */,
+				3CCACCE917F268C800586616 /* main.m in Sources */,
+				3CCACCF017F268C800586616 /* AppDelegate.m in Sources */,
+				3C62E2CD17F7545F00022F50 /* NSTextFieldCopyPast.m in Sources */,
+				3CCACCF617F268C800586616 /* smugsync.xcdatamodeld in Sources */,
+				3C62E2F017F7756A00022F50 /* CDEvent.m in Sources */,
+				3C62E2C717F73C7800022F50 /* Album.m in Sources */,
+				3CCACD1717F6672200586616 /* PrefsViewController.m in Sources */,
+				3C62E2F117F7756A00022F50 /* CDEvents.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CCACCF717F268C800586616 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CCACD0A17F268C800586616 /* smugsyncTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3CCACD0117F268C800586616 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3CCACCD817F268C800586616 /* smugsync */;
+			targetProxy = 3CCACD0017F268C800586616 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3CCACCE517F268C800586616 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3CCACCE617F268C800586616 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		3CCACCEB17F268C800586616 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3CCACCEC17F268C800586616 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		3CCACCF117F268C800586616 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3CCACCF217F268C800586616 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		3CCACD0517F268C800586616 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3CCACD0617F268C800586616 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3CCACD0B17F268C800586616 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		3CCACD0C17F268C800586616 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		3CCACD0E17F268C800586616 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/sdickson/Documents/oDesk/SmugSync/smugsync,
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "smugsync/smugsync-Prefix.pch";
+				INFOPLIST_FILE = "smugsync/smugsync-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		3CCACD0F17F268C800586616 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/sdickson/Documents/oDesk/SmugSync/smugsync,
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "smugsync/smugsync-Prefix.pch";
+				INFOPLIST_FILE = "smugsync/smugsync-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		3CCACD1117F268C800586616 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/smugsync.app/Contents/MacOS/smugsync";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "smugsync/smugsync-Prefix.pch";
+				INFOPLIST_FILE = "smugsyncTests/smugsyncTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		3CCACD1217F268C800586616 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/smugsync.app/Contents/MacOS/smugsync";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "smugsync/smugsync-Prefix.pch";
+				INFOPLIST_FILE = "smugsyncTests/smugsyncTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3CCACCD417F268C800586616 /* Build configuration list for PBXProject "smugsync" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CCACD0B17F268C800586616 /* Debug */,
+				3CCACD0C17F268C800586616 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3CCACD0D17F268C800586616 /* Build configuration list for PBXNativeTarget "smugsync" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CCACD0E17F268C800586616 /* Debug */,
+				3CCACD0F17F268C800586616 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3CCACD1017F268C800586616 /* Build configuration list for PBXNativeTarget "smugsyncTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CCACD1117F268C800586616 /* Debug */,
+				3CCACD1217F268C800586616 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3CCACCF417F268C800586616 /* smugsync.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3CCACCF517F268C800586616 /* smugsync.xcdatamodel */,
+			);
+			currentVersion = 3CCACCF517F268C800586616 /* smugsync.xcdatamodel */;
+			path = smugsync.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 3CCACCD117F268C800586616 /* Project object */;
+}

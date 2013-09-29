@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'smugsync' target in the 'smugsync' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif
