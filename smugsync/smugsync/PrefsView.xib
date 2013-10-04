@@ -7,9 +7,9 @@
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="PrefsViewController">
             <connections>
-                <outlet property="apiKey" destination="109" id="118"/>
                 <outlet property="email" destination="87" id="R9O-QJ-F9N"/>
                 <outlet property="iPhotoLibrary" destination="fuJ-Pz-0Xg" id="tBh-ur-k3H"/>
+                <outlet property="isIphotoDefault" destination="68" id="gWf-bH-Of0"/>
                 <outlet property="openAtLogin" destination="49" id="xz1-eB-fiF"/>
                 <outlet property="password" destination="ezg-CJ-hc8" id="ehy-qW-ct3"/>
                 <outlet property="showNotifications" destination="44" id="fXR-fe-lP6"/>
@@ -82,18 +82,21 @@
                                             <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                             <font key="font" metaFont="system"/>
                                         </buttonCell>
+                                        <connections>
+                                            <action selector="changeIsDefaultiPhotoLocation:" target="-2" id="Qhv-0I-j4Y"/>
+                                        </connections>
                                     </button>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9Q5-ER-mRl">
-                                        <rect key="frame" x="210" y="126" width="217" height="17"/>
+                                        <rect key="frame" x="210" y="126" width="136" height="17"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Directory if different than default:" id="2qt-9B-0Ql">
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Alternate iPhoto File:" id="2qt-9B-0Ql">
                                             <font key="font" metaFont="system"/>
                                             <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                         </textFieldCell>
                                     </textField>
                                     <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fuJ-Pz-0Xg" customClass="NSTextFieldCopyPast">
-                                        <rect key="frame" x="213" y="96" width="355" height="22"/>
+                                        <rect key="frame" x="101" y="96" width="468" height="22"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="Uxp-CS-j8j">
                                             <font key="font" metaFont="system"/>
@@ -101,6 +104,17 @@
                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                         </textFieldCell>
                                     </textField>
+                                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pi9-kd-zcz">
+                                        <rect key="frame" x="281" y="59" width="53" height="32"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <buttonCell key="cell" type="push" title="..." bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="P6M-sJ-fck">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <action selector="browseForIphotoFile:" target="-2" id="yto-BF-QQ4"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="62" firstAttribute="top" secondItem="6" secondAttribute="top" constant="42" id="66"/>
@@ -148,24 +162,6 @@
                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                         </textFieldCell>
                                     </textField>
-                                    <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="103">
-                                        <rect key="frame" x="175" y="130" width="55" height="17"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="API Key:" id="104">
-                                            <font key="font" metaFont="system"/>
-                                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                                        </textFieldCell>
-                                    </textField>
-                                    <textField verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="109" customClass="NSTextFieldCopyPast">
-                                        <rect key="frame" x="247" y="127" width="233" height="22"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="110">
-                                            <font key="font" metaFont="system"/>
-                                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                        </textFieldCell>
-                                    </textField>
                                     <secureTextField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ezg-CJ-hc8">
                                         <rect key="frame" x="247" y="162" width="233" height="22"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
@@ -185,9 +181,6 @@
                                     <constraint firstItem="87" firstAttribute="centerY" secondItem="75" secondAttribute="centerY" id="89"/>
                                     <constraint firstItem="87" firstAttribute="leading" secondItem="17" secondAttribute="leading" constant="247" id="90"/>
                                     <constraint firstItem="87" firstAttribute="top" secondItem="17" secondAttribute="top" constant="67" id="91"/>
-                                    <constraint firstItem="103" firstAttribute="trailing" secondItem="80" secondAttribute="trailing" id="107"/>
-                                    <constraint firstItem="109" firstAttribute="top" secondItem="17" secondAttribute="top" constant="135" id="112"/>
-                                    <constraint firstItem="109" firstAttribute="centerY" secondItem="103" secondAttribute="centerY" id="113"/>
                                 </constraints>
                             </view>
                         </tabViewItem>

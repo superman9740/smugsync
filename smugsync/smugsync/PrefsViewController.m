@@ -34,9 +34,9 @@
     {
         _email.stringValue = appDel.emailAddress;
        _password.stringValue = appDel.password;
-        _apiKey.stringValue = appDel.apiKey;
        if(appDel.iphotoLibrary != nil)
            _iPhotoLibrary.stringValue = appDel.iphotoLibrary;
+        
         if([appDel.showNotifications isEqualToString:@"YES"])
         {
             _showNotifications.state = NSOnState;
@@ -47,15 +47,29 @@
             _showNotifications.state = NSOffState;
             
         }
+        if([appDel.isDefaultIphotoLocation isEqualToString:@"YES"])
+        {
+            _isIphotoDefault.state = NSOnState;
+            
+        }
+        else
+        {
+            _isIphotoDefault.state = NSOffState;
+            
+        }
+
     }
+         
     
 }
+
+
+
 -(IBAction)savePreferences:(id)sender
 {
     AppDelegate* appDel = (AppDelegate *)[[NSApplication sharedApplication] delegate];
     appDel.emailAddress = _email.stringValue;
     appDel.password = _password.stringValue;
-    appDel.apiKey = _apiKey.stringValue;
     appDel.iphotoLibrary = _iPhotoLibrary.stringValue;
     if(_showNotifications.state == NSOnState)
     {
@@ -116,6 +130,54 @@
     
 	CFRelease(loginItems);
 }
+
+-(IBAction)changeIsDefaultiPhotoLocation:(id)sender
+{
+    AppDelegate* appDel = (AppDelegate *)[[NSApplication sharedApplication] delegate];
+    
+    if(_isIphotoDefault.state == NSOnState)
+    {
+        appDel.isDefaultIphotoLocation = @"YES";
+        
+    }
+    else
+    {
+        appDel.isDefaultIphotoLocation = @"NO";
+        
+    }
+    [appDel savePrefs];
+    
+}
+-(IBAction)browseForIphotoFile:(id)sender
+{
+ 
+    NSOpenPanel *panel = [NSOpenPanel openPanel];
+    
+    // Configure your panel the way you want it
+    [panel setCanChooseFiles:YES];
+    [panel setCanChooseDirectories:NO];
+    [panel setAllowsMultipleSelection:NO];
+    //[panel setAllowedFileTypes:[NSArray arrayWithObject:@"txt"]];
+    
+    [panel beginWithCompletionHandler:^(NSInteger result){
+        if (result == NSFileHandlingPanelOKButton) {
+            
+            for (NSURL *fileURL in [panel URLs]) {
+                
+                NSString* path = fileURL.path;
+                _iPhotoLibrary.stringValue = path;
+                
+            }
+        }
+        
+        
+    }];
+    
+   
+    
+    
+}
+
 
 -(void) deleteAppFromLoginItem{
 	NSString * appPath = [[NSBundle mainBundle] bundlePath];

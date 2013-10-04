@@ -36,6 +36,8 @@
 @property (strong, nonatomic) NSString* iphotoLibrary;
 
 @property (strong, nonatomic) NSString*  showNotifications;
+@property (strong, nonatomic) NSString*  isDefaultIphotoLocation;
+
 
 
 @property (strong, nonatomic) PrefsViewController* viewController;
@@ -53,6 +55,8 @@
 @property (strong, nonatomic) CDEvents* events;
 
 @property (strong, nonatomic) dispatch_queue_t uploadQueue;
+@property (strong, nonatomic) NSPipe* pipe;
+@property (strong, nonatomic) NSFileHandle* pipeHandle;
 
 
 -(IBAction)showPrefs:(id)sender;

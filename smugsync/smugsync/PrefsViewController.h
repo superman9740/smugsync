@@ -19,15 +19,16 @@
 
 @property (strong, nonatomic) IBOutlet NSTextField* email;
 @property (strong, nonatomic) IBOutlet NSTextField* password;
-@property (strong, nonatomic) IBOutlet NSTextField* apiKey;
 @property (strong, nonatomic) IBOutlet NSTextField* iPhotoLibrary;
 
 
 
 @property (strong, nonatomic) IBOutlet NSButton* showNotifications;
 @property (strong, nonatomic) IBOutlet NSButton* openAtLogin;
+@property (strong, nonatomic) IBOutlet NSButton* isIphotoDefault;
 
 
+@property (strong, nonatomic) IBOutlet NSTextView* debugView;
 
 
 
@@ -35,6 +36,9 @@
 -(IBAction)savePreferences:(id)sender;
 -(void) addAppAsLoginItem;
 -(IBAction)changeOpenAtLogin:(id)sender;
+-(IBAction)changeIsDefaultiPhotoLocation:(id)sender;
+-(IBAction)browseForIphotoFile:(id)sender;
+
 
 
 @end
