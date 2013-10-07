@@ -17,12 +17,20 @@
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
     
+    [_statusText setStringValue:@"App starting up..."];
     
     
+    if(_photosToUpload == _photosUploaded)
+    {
+        _uploadProgressBar.minValue = 0;
+        _uploadProgressBar.maxValue = 100;
+        [_uploadProgressBar setDoubleValue:100];
+        
+        
+    }
     
     
-    
-    NSLog(@"App Startup.");
+   
     _apiKey = @"ISDKTktZDsg121V26i4wFQfm6IkOAr3A";
     _photosToUpload = 0;
     
@@ -37,7 +45,7 @@
     if (standardUserDefaults) {
         _emailAddress = [standardUserDefaults valueForKey:@"email"];
         _password = [standardUserDefaults valueForKey:@"password"];
-        _apiKey = [standardUserDefaults valueForKey:@"apikey"];
+        //_apiKey = [standardUserDefaults valueForKey:@"apikey"];
         _iphotoLibrary = [standardUserDefaults valueForKey:@"iphotolibrary"];
         _showNotifications = [standardUserDefaults valueForKey:@"shownotifications"];
         _isDefaultIphotoLocation = [standardUserDefaults valueForKey:@"defaultiphotolocation"];
@@ -67,7 +75,9 @@
 
     NSStatusBar *statusBar = [NSStatusBar systemStatusBar];
     _statusItem = [statusBar statusItemWithLength:NSVariableStatusItemLength];
-    _statusItem.title = @"Smugsync";
+    _statusItem.image = [NSImage imageNamed:@"photo.png"];
+    [_statusItem setHighlightMode:YES];
+    
     [_statusItem setMenu:_statusMenu];
     
 
@@ -76,13 +86,19 @@
     self.events   = [[CDEvents alloc] initWithURLs:urls block:
                      ^(CDEvents *watcher, CDEvent *event) {
                          
+                         NSString* fileName = event.URL.lastPathComponent;
+                         if([fileName rangeOfString:@"photolibrary"].location != NSNotFound)
+                         {
                          
-                         dispatch_async(_uploadQueue, ^{
-                             NSLog(@"Directory activity:  %@", _iphotoLibrary);
-                             
-                             [self checkForiPhotoDirectoryChanges:self];
-                             
-                         });
+                             dispatch_async(_uploadQueue, ^{
+                                 NSLog(@"Directory activity:  %@", _iphotoLibrary);
+                                 [self checkForiPhotoDirectoryChanges:self];
+                                 
+                                 
+                             });
+                         }
+                         
+                         
                          
                      }];
     
@@ -94,7 +110,7 @@
     //First check for a photos.xml file.  If it does not exist, this is the first time the app was run, so all photos are sent up to smugmug
    
         NSDictionary* dict = nil;
-    NSLog(@"Logger:  Checking for photos.");
+    
     
     _syncedAlbums = [[NSMutableArray alloc] initWithCapacity:10];
         
@@ -114,7 +130,7 @@
         NSString* filePath = nil;
         if([_isDefaultIphotoLocation isEqualToString:@"YES"])
         {
-                filePath = [NSString stringWithFormat:@"%@/iPhoto\\ Library\\AlbumData.xml", _iphotoLibrary];
+                filePath = [NSString stringWithFormat:@"%@iPhoto Library.photolibrary/AlbumData.xml", _iphotoLibrary];
         }
         else
         {
@@ -123,8 +139,11 @@
             
         }
     
-    
         dict = [NSDictionary dictionaryWithContentsOfFile:filePath];
+    
+    
+
+    
         NSArray* albumsDict = [dict objectForKey:@"List of Albums"];
         NSDictionary* photosDict = [dict objectForKey:@"Master Image List"];
         
@@ -253,11 +272,14 @@
 -(void)sync
 {
     BOOL wereAnyPhotosUploaded = NO;
-    NSLog(@"Sync started.");
+    
+    
     
     _photosUploaded = 0;
     _photosToUpload = 0;
     
+    _statusItem.image = [NSImage imageNamed:@"camera_arrow_down.png"];
+
     
     for (Album* album in _albums)
     {
@@ -326,7 +348,8 @@
                     //This photo was never uploaded.  Upload it now.
                     if(!photoWasFound)
                     {
-                                                
+                        [_uploadProgressBar setHidden:NO];
+                         _statusText.stringValue = @"Uploading photo...";
                         [self uploadPhoto:photo  album:album];
                         wereAnyPhotosUploaded = YES;
                         photoWasFound = NO;
@@ -355,6 +378,10 @@
     notification.soundName = NSUserNotificationDefaultSoundName;
     [[NSUserNotificationCenter defaultUserNotificationCenter] deliverNotification:notification];
  }
+    
+    _statusItem.image = [NSImage imageNamed:@"camera_checkmark.png"];
+    _statusText.stringValue = @"synced.";
+    [_uploadProgressBar setHidden:YES];
     
     
     
@@ -395,8 +422,9 @@
         if(_photosToUpload == _photosUploaded)
         {
             _uploadProgressBar.minValue = 0;
-            _uploadProgressBar.maxValue = 0;
-           
+            _uploadProgressBar.maxValue = 100;
+            [_uploadProgressBar setDoubleValue:100];
+            
             _photosUploaded = 0;
             _photosToUpload = 0;
             
@@ -413,6 +441,9 @@
 
 -(void)getSmugmugSession
 {
+
+    
+   
 
     NSMutableURLRequest* request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"http://api.smugmug.com/services/api/json/1.2.2/?method=smugmug.login.withPassword&EmailAddress=%@&Password=%@&APIKey=%@",_emailAddress, _password,_apiKey]]];
                                     
@@ -436,6 +467,7 @@
     {
         NSLog(@"getSmugmugSession:  success\n");
         printf("getSmugmugSession:  success\n");
+        _statusText.stringValue = @"Session id created...";
         
     }
     NSData* retVal = [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:&error];
@@ -450,10 +482,14 @@
 -(void)createAlbums
 {
    
+    _statusText.stringValue = @"Scanning for new albums...";
+
+    
+    
     
     for (Album* album in _albums)
     {
-        NSLog(@"Logger:  createAlbums\n");
+        NSLog(@"Logger:  Checking for albums\n");
         NSString* urlStr = [NSString stringWithFormat:@"http://api.smugmug.com/services/api/json/1.2.2/?method=smugmug.albums.create&SessionID=%@&Title=%@&Public=false&Unique=true", _sessionID, album.name];
         
         NSMutableURLRequest* request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[urlStr stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]]];
@@ -499,6 +535,8 @@
 }
 -(void)uploadPhotos
 {
+    
+    _statusText.stringValue = @"Scanning for new photos...";
     
 
     for (Album* album in _albums)
@@ -557,7 +595,7 @@
     if (standardUserDefaults) {
         [standardUserDefaults setValue:_emailAddress forKey:@"email"];
         [standardUserDefaults setValue:_password forKey:@"password"];
-        [standardUserDefaults setValue:_apiKey forKey:@"apikey"];
+        //[standardUserDefaults setValue:_apiKey forKey:@"apikey"];
         [standardUserDefaults setValue:_iphotoLibrary forKey:@"iphotolibrary"];
         [standardUserDefaults setValue:_showNotifications forKey:@"shownotifications"];
         [standardUserDefaults setValue:_isDefaultIphotoLocation forKey:@"defaultiphotolocation"];
@@ -577,6 +615,8 @@
         
     }
     [self getSmugmugSession];
+    [self createAlbums];
+    _statusText.stringValue = @"synced.";
     
     NSArray *url  = [NSURL URLWithString:[_iphotoLibrary stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
     
@@ -588,12 +628,21 @@
                                watcher,
                                event
                                );
-                         dispatch_async(_uploadQueue, ^{
-                             NSLog(@"Logger:  Directory update detected.");
+                         
+                         NSString* fileName = event.URL.lastPathComponent;
+                         if([fileName rangeOfString:@"photolibrary"].location != NSNotFound)
+                         {
+                             dispatch_async(_uploadQueue, ^{
+                                 NSLog(@"Logger:  Directory update detected.");
+                                 
+                                 [self checkForiPhotoDirectoryChanges:self];
+                                 
+                             });
                              
-                             [self checkForiPhotoDirectoryChanges:self];
                              
-                         });
+                         }
+                         
+                        
                          
                      }];
     [self.window orderOut:self];

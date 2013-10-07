@@ -54,8 +54,6 @@
 
 
 
-
-
 @property (strong, nonatomic) NSStatusItem* statusItem;
 @property (strong,nonatomic) IBOutlet NSMenu* statusMenu;
 
@@ -76,6 +74,8 @@
 @property (nonatomic, assign) double photosUploaded;
 
 @property (strong, nonatomic) IBOutlet NSProgressIndicator* uploadProgressBar;
+
+@property (strong, nonatomic) IBOutlet NSTextField* statusText;
 
 
 -(IBAction)updateProgess:(id)sender;
