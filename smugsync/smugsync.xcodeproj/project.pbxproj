@@ -24,7 +24,6 @@
 		3CCACD0717F268C800586616 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3CCACD0517F268C800586616 /* InfoPlist.strings */; };
 		3CCACD0A17F268C800586616 /* smugsyncTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CCACD0917F268C800586616 /* smugsyncTests.m */; };
 		3CCACD1717F6672200586616 /* PrefsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CCACD1517F6672200586616 /* PrefsViewController.m */; };
-		3CCACD1817F6672200586616 /* PrefsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CCACD1617F6672200586616 /* PrefsView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,7 +71,6 @@
 		3CCACD0917F268C800586616 /* smugsyncTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = smugsyncTests.m; sourceTree = "<group>"; };
 		3CCACD1417F6672200586616 /* PrefsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefsViewController.h; sourceTree = "<group>"; };
 		3CCACD1517F6672200586616 /* PrefsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrefsViewController.m; sourceTree = "<group>"; };
-		3CCACD1617F6672200586616 /* PrefsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PrefsView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,7 +160,6 @@
 				3CCACCEE17F268C800586616 /* AppDelegate.h */,
 				3CCACCEF17F268C800586616 /* AppDelegate.m */,
 				3CCACCF117F268C800586616 /* MainMenu.xib */,
-				3CCACD1617F6672200586616 /* PrefsView.xib */,
 				3CCACCF417F268C800586616 /* smugsync.xcdatamodeld */,
 				3CCACCE317F268C800586616 /* Supporting Files */,
 			);
@@ -283,7 +280,6 @@
 				3CCACCE717F268C800586616 /* InfoPlist.strings in Resources */,
 				3CCACCED17F268C800586616 /* Credits.rtf in Resources */,
 				3CCACCF317F268C800586616 /* MainMenu.xib in Resources */,
-				3CCACD1817F6672200586616 /* PrefsView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

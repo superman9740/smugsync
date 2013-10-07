@@ -7,7 +7,6 @@
 //
 
 #import "AppDelegate.h"
-#import "PrefsViewController.h"
 #import "Album.h"
 #import "Photo.h"
 #import <CDEvents/CDEvents.h>
@@ -17,8 +16,15 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
+    
+    
+    
+    
+    
+    
     NSLog(@"App Startup.");
     _apiKey = @"ISDKTktZDsg121V26i4wFQfm6IkOAr3A";
+    _photosToUpload = 0;
     
    
     //restore user details from defaults
@@ -249,6 +255,10 @@
     BOOL wereAnyPhotosUploaded = NO;
     NSLog(@"Sync started.");
     
+    _photosUploaded = 0;
+    _photosToUpload = 0;
+    
+    
     for (Album* album in _albums)
     {
         for (Album* uploadedAlbum in _syncedAlbums)
@@ -274,9 +284,8 @@
                         //This photo was never uploaded.  Upload it now.
                     if(!photoWasFound)
                     {
-                        [self uploadPhoto:photo  album:album];
-                        wereAnyPhotosUploaded = YES;
-                        photoWasFound = NO;
+                        _photosToUpload++;
+                      
                     }
                 
                 
@@ -287,6 +296,56 @@
             
         }
     }
+    
+    
+ 
+    
+    
+    for (Album* album in _albums)
+    {
+        for (Album* uploadedAlbum in _syncedAlbums)
+        {
+            if([album.name isEqualToString:uploadedAlbum.name])
+            {
+                //This album has already been uploaded, now check the images
+                for (Photo* photo in album.photos)
+                {
+                    BOOL photoWasFound = NO;
+                    for (Photo* uploadedPhoto in uploadedAlbum.photos)
+                    {
+                        if([photo.name isEqualToString:uploadedPhoto.name])
+                        {
+                            photoWasFound = YES;
+                            
+                        }
+                        
+                        
+                    }
+                    
+                    
+                    //This photo was never uploaded.  Upload it now.
+                    if(!photoWasFound)
+                    {
+                                                
+                        [self uploadPhoto:photo  album:album];
+                        wereAnyPhotosUploaded = YES;
+                        photoWasFound = NO;
+                    }
+                    
+                    
+                    
+                }
+            }
+            
+            
+        }
+    }
+    
+    
+    
+    
+    
+    
     
  if(wereAnyPhotosUploaded && [_showNotifications isEqualToString:@"YES"])
  {
@@ -323,8 +382,28 @@
     
     
     
+    _photosUploaded++;
     
+    double percentCompeted = _photosUploaded / _photosToUpload;
     
+    NSLog(@"Percent completed: %f", percentCompeted * 100);
+    
+    dispatch_async(dispatch_get_main_queue(), ^{
+        
+        [_uploadProgressBar setDoubleValue:percentCompeted * 100];
+        
+        if(_photosToUpload == _photosUploaded)
+        {
+            _uploadProgressBar.minValue = 0;
+            _uploadProgressBar.maxValue = 0;
+           
+            _photosUploaded = 0;
+            _photosToUpload = 0;
+            
+        }
+        
+        
+    });
     
     
     
@@ -443,10 +522,15 @@
             NSError* error = nil;
             NSURLResponse* response;
             
+            
             NSData* retVal = [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:&error];
             
             if(error == nil)
+            {
                 photo.uploaded = YES;
+                
+                
+            }
             
         }
     }
@@ -524,22 +608,191 @@
 
 -(IBAction)showPrefs:(id)sender
 {
-    if(_viewController == nil)
+   
+    
+    if(_emailAddress != nil)
     {
-        _viewController = [[PrefsViewController alloc] initWithNibName:@"PrefsView" bundle:[NSBundle mainBundle]];
-        CGRect prefsFrame = _viewController.view.frame;
-        prefsFrame.origin.x = (_window.frame.size.width - prefsFrame.size.width) / 2 - 80;
-        prefsFrame.size.height = _window.frame.size.height - 20;
-        prefsFrame.size.width = _window.frame.size.width - 20;
-        _viewController.view.frame = prefsFrame;
+        _email.stringValue = _emailAddress;
+        _prefsPassword.stringValue = _password;
+        if(_iphotoLibrary != nil)
+            _iPhotoLibrary.stringValue = _iphotoLibrary;
+        
+        if([_showNotifications isEqualToString:@"YES"])
+        {
+            _prefsShowNotifications.state = NSOnState;
+            
+        }
+        else
+        {
+            _prefsShowNotifications.state = NSOffState;
+            
+        }
+        if([_isDefaultIphotoLocation isEqualToString:@"YES"])
+        {
+            _isIphotoDefault.state = NSOnState;
+            
+        }
+        else
+        {
+            _isIphotoDefault.state = NSOffState;
+            
+        }
+        
+    }
+    
+
+    
+    //[_window.contentView addSubview:_viewController.view];
+    [_window makeKeyAndOrderFront:self];
+    
+   
+    
+    
+}
+
+-(IBAction)changeOpenAtLogin:(id)sender
+{
+    if(_openAtLogin.state == NSOnState)
+    {
+        
+        [self addAppAsLoginItem];
+        
+    }
+    else
+    {
+        [self deleteAppFromLoginItem];
+        
         
     }
     
     
-    [_window.contentView addSubview:_viewController.view];
-    [_window makeKeyAndOrderFront:self];
     
-   
+}
+
+-(void) addAppAsLoginItem{
+	NSString * appPath = [[NSBundle mainBundle] bundlePath];
+    
+	// This will retrieve the path for the application
+	// For example, /Applications/test.app
+	CFURLRef url = (CFURLRef)CFBridgingRetain([NSURL fileURLWithPath:appPath]);
+    
+	// Create a reference to the shared file list.
+    // We are adding it to the current user only.
+    // If we want to add it all users, use
+    // kLSSharedFileListGlobalLoginItems instead of
+    //kLSSharedFileListSessionLoginItems
+	LSSharedFileListRef loginItems = LSSharedFileListCreate(NULL,
+                                                            kLSSharedFileListSessionLoginItems, NULL);
+	if (loginItems) {
+		//Insert an item to the list.
+		LSSharedFileListItemRef item = LSSharedFileListInsertItemURL(loginItems,
+                                                                     kLSSharedFileListItemLast, NULL, NULL,
+                                                                     url, NULL, NULL);
+		if (item){
+			CFRelease(item);
+        }
+	}
+    
+	CFRelease(loginItems);
+}
+
+
+-(IBAction)changeIsDefaultiPhotoLocation:(id)sender
+{
+    AppDelegate* appDel = (AppDelegate *)[[NSApplication sharedApplication] delegate];
+    
+    if(_isIphotoDefault.state == NSOnState)
+    {
+        appDel.isDefaultIphotoLocation = @"YES";
+        
+    }
+    else
+    {
+        appDel.isDefaultIphotoLocation = @"NO";
+        
+    }
+    [appDel savePrefs];
+    
+}
+-(IBAction)browseForIphotoFile:(id)sender
+{
+    
+    NSOpenPanel *panel = [NSOpenPanel openPanel];
+    
+    // Configure your panel the way you want it
+    [panel setCanChooseFiles:YES];
+    [panel setCanChooseDirectories:NO];
+    [panel setAllowsMultipleSelection:NO];
+    //[panel setAllowedFileTypes:[NSArray arrayWithObject:@"txt"]];
+    
+    [panel beginWithCompletionHandler:^(NSInteger result){
+        if (result == NSFileHandlingPanelOKButton) {
+            
+            for (NSURL *fileURL in [panel URLs]) {
+                
+                NSString* path = fileURL.path;
+                _iPhotoLibrary.stringValue = path;
+                
+            }
+        }
+        
+        
+    }];
+    
+    
+    
+    
+}
+
+
+-(void) deleteAppFromLoginItem{
+	NSString * appPath = [[NSBundle mainBundle] bundlePath];
+    
+	// This will retrieve the path for the application
+	// For example, /Applications/test.app
+	CFURLRef url = (CFURLRef)CFBridgingRetain([NSURL fileURLWithPath:appPath]);
+    
+	// Create a reference to the shared file list.
+	LSSharedFileListRef loginItems = LSSharedFileListCreate(NULL,
+                                                            kLSSharedFileListSessionLoginItems, NULL);
+    
+	if (loginItems) {
+		UInt32 seedValue;
+		//Retrieve the list of Login Items and cast them to
+		// a NSArray so that it will be easier to iterate.
+		NSArray  *loginItemsArray = (NSArray *)CFBridgingRelease(LSSharedFileListCopySnapshot(loginItems, &seedValue));
+		int i = 0;
+		for(i ; i< [loginItemsArray count]; i++){
+			LSSharedFileListItemRef itemRef = (LSSharedFileListItemRef)CFBridgingRetain([loginItemsArray
+                                                                                         objectAtIndex:i]);
+			//Resolve the item with URL
+			if (LSSharedFileListItemResolve(itemRef, 0, (CFURLRef*) &url, NULL) == noErr) {
+				NSString * urlPath = [(NSURL*)CFBridgingRelease(url) path];
+				if ([urlPath compare:appPath] == NSOrderedSame){
+					LSSharedFileListItemRemove(loginItems,itemRef);
+				}
+			}
+		}
+    }
+}
+
+
+-(IBAction)savePreferences:(id)sender
+{
+    _emailAddress = _email.stringValue;
+    _password = _prefsPassword.stringValue;
+    _iphotoLibrary = _iPhotoLibrary.stringValue;
+    if(_prefsShowNotifications.state == NSOnState)
+    {
+        _showNotifications = @"YES";
+        
+    }
+    else
+    {
+        _showNotifications = @"NO";
+        
+    }
+    [self savePrefs];
     
     
 }

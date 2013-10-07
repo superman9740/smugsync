@@ -7,7 +7,7 @@
 //
 
 #import <Cocoa/Cocoa.h>
-@class PrefsViewController;
+
 @class Album;
 @class Photo;
 @class CDEvents;
@@ -23,6 +23,19 @@
     
     
 }
+
+//Prefs
+
+@property (strong, nonatomic) IBOutlet NSTextField* email;
+@property (strong, nonatomic) IBOutlet NSTextField* prefsPassword;
+@property (strong, nonatomic) IBOutlet NSTextField* iPhotoLibrary;
+
+
+
+@property (strong, nonatomic) IBOutlet NSButton* prefsShowNotifications;
+@property (strong, nonatomic) IBOutlet NSButton* openAtLogin;
+@property (strong, nonatomic) IBOutlet NSButton* isIphotoDefault;
+
 
 
 @property (assign) IBOutlet NSWindow *window;
@@ -40,7 +53,7 @@
 
 
 
-@property (strong, nonatomic) PrefsViewController* viewController;
+
 
 
 @property (strong, nonatomic) NSStatusItem* statusItem;
@@ -59,6 +72,15 @@
 @property (strong, nonatomic) NSFileHandle* pipeHandle;
 
 
+@property (nonatomic, assign) double photosToUpload;
+@property (nonatomic, assign) double photosUploaded;
+
+@property (strong, nonatomic) IBOutlet NSProgressIndicator* uploadProgressBar;
+
+
+-(IBAction)updateProgess:(id)sender;
+
+
 -(IBAction)showPrefs:(id)sender;
 -(void)savePrefs;
 
@@ -74,6 +96,7 @@
 
 -(IBAction)exit:(id)sender;
 
+-(IBAction)savePreferences:(id)sender;
 
 
 @end

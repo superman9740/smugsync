@@ -20,11 +20,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "smugsync/AppDelegate.m"
-            timestampString = "402546453.405746"
+            timestampString = "402774153.217836"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "476"
-            endingLineNumber = "476"
+            startingLineNumber = "563"
+            endingLineNumber = "563"
             landmarkName = "-savePrefs"
             landmarkType = "5">
          </BreakpointContent>
@@ -36,11 +36,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "smugsync/AppDelegate.m"
-            timestampString = "402546453.405746"
+            timestampString = "402771034.388718"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "215"
-            endingLineNumber = "215"
+            startingLineNumber = "221"
+            endingLineNumber = "221"
             landmarkName = "-checkForiPhotoDirectoryChanges:"
             landmarkType = "5">
          </BreakpointContent>
@@ -52,12 +52,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "smugsync/AppDelegate.m"
-            timestampString = "402546460.080564"
+            timestampString = "402774142.052192"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "119"
-            endingLineNumber = "119"
-            landmarkName = "-checkForiPhotoDirectoryChanges:"
+            startingLineNumber = "393"
+            endingLineNumber = "393"
+            landmarkName = "-uploadPhoto:album:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
